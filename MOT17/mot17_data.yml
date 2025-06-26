@@ -1,0 +1,6 @@
+names:
+- objects
+nc: 1
+path: d:\Project2-PedestrianTracking\MOT17
+train: train/images
+val: test/images
