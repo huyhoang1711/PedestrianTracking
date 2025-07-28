@@ -16,7 +16,7 @@ Phương pháp chính được sử dụng là sự kết hợp giữa mô hình
 Dự án sử dụng bộ dữ liệu **MOT17 (Multiple Object Tracking 17)**. Dữ liệu được xử lý để phù hợp với định dạng mà YOLO yêu cầu.
 
 *   **Tải dữ liệu:**
-    ```python
+    ```bash
     !wget https://motchallenge.net/data/MOT17.zip
     !unzip -qq MOT17.zip
     ```
