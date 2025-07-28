@@ -1,8 +1,8 @@
 ## I. Giới thiệu
 
-**Object Tracking (Theo dõi đối tượng)** là một bài toán quan trọng trong lĩnh vực Thị giác Máy tính (Computer Vision), với mục tiêu theo dõi và xác định vị trí của các đối tượng qua các khung hình liên tiếp trong một video.
+**Object Tracking** là một bài toán quan trọng trong lĩnh vực Thị giác Máy tính, với mục tiêu theo dõi và xác định vị trí của các đối tượng qua các khung hình liên tiếp trong một video.
 
-Dự án này tập trung vào việc xây dựng một hệ thống **Pedestrian Tracking (Theo dõi người đi bộ)**. Hệ thống có khả năng phát hiện và theo dõi những người đi bộ trong video.
+Dự án này tập trung vào việc xây dựng một hệ thống **Pedestrian Tracking**. Hệ thống có khả năng phát hiện và theo dõi những người đi bộ trong video.
 
 Phương pháp chính được sử dụng là sự kết hợp giữa mô hình phát hiện đối tượng **YOLOv8** và thuật toán theo dõi **DeepSORT**.
 
