@@ -9,16 +9,14 @@ Phương pháp chính được sử dụng là sự kết hợp giữa mô hình
 *   **YOLOv8 (You Only Look Once version 8)**: Là một mô hình phát hiện đối tượng hiệu quả và nhanh chóng, có khả năng xác định vị trí của đối tượng trong ảnh hoặc video với độ chính xác cao.
 *   **DeepSORT (Simple Online and Realtime Tracking with a Deep Association Metric)**: Là một thuật toán theo dõi đối tượng tiên tiến, sử dụng deep learning để tính toán sự tương đồng giữa các đối tượng trong các khung hình liên tiếp.
 
-![Sơ đồ hệ thống](https://i.imgur.com/e3u9sN1.png)
-
 ## II. Các bước thực hiện
 
 ### 1. Chuẩn bị dữ liệu
 
-Dự án sử dụng bộ dữ liệu **MOT17 (Multiple Object Tracking 17)**. [3] Dữ liệu được xử lý để phù hợp với định dạng mà YOLO yêu cầu.
+Dự án sử dụng bộ dữ liệu **MOT17 (Multiple Object Tracking 17)**. Dữ liệu được xử lý để phù hợp với định dạng mà YOLO yêu cầu.
 
 *   **Tải dữ liệu:**
-    ```bash
+    ```python
     !wget https://motchallenge.net/data/MOT17.zip
     !unzip -qq MOT17.zip
     ```
@@ -63,11 +61,3 @@ Dự án sử dụng bộ dữ liệu **MOT17 (Multiple Object Tracking 17)**. [
         2.  Cung cấp kết quả phát hiện cho **DeepSORT** để thực hiện việc theo dõi và gán ID cho từng người.
     *   **Vẽ kết quả:** Vẽ bounding box và ID của từng đối tượng lên frame.
     *   **Lưu video:** Tổng hợp các frame đã xử lý để tạo thành video kết quả.
-
-## III. Kết quả
-
-Kết quả cuối cùng là một video cho thấy những người đi bộ đã được phát hiện và theo dõi một cách ổn định, mỗi người được gán một ID duy nhất trong suốt quá trình xuất hiện trong video.
-
-![Ảnh cắt từ video kết quả](https://i.imgur.com/r3b3a7w.png)
-
-Để xem video đầy đủ, bạn có thể tham khảo tại [đây](https://motchallenge.net/).
